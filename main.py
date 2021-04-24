@@ -2,12 +2,18 @@ import pynput
 import time
 from pynput.mouse import Button, Controller
 
-mouse = Controller()
+def main():
 
-for x in range(50):
-#clicks at 10.00 CPS (clicks per second)
-    time.sleep(0.01)
-    mouse.press(Button.left)
-    mouse.release(Button.left)
+    mouse = Controller()
 
-print('the autoclicker has run successfully!')
+    for x in range(50):
+    #clicks at 10.00 CPS (clicks per second)
+        time.sleep(0.01)
+        mouse.press(Button.left)
+        mouse.release(Button.left)
+
+    print('the autoclicker has run successfully!')
+
+
+if __name__ == '__main__':
+    main()
